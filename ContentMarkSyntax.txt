@@ -1,0 +1,44 @@
+[[[Markdown]]]
+<b></b> # Bold tags will extract the word with the sentence it is in, and put it into a Glossary page.
+
+-H>, -H2>, -H3>, -H4> # Expands into headers. 
+
+#Special classes added as so:
+-H4[,classes to add]
+
+-Q> # Expands into quotes
+-QA> # Expands into quote author
+
+-LB> # [Unordered] List begins
+# Content in here should be TITLE : ETC
+# Where TITLE and the colon will be bold.
+-LE> # [Unordered] List ends
+
+-OLB> # Ordered List Begins, functionally similar to LB
+-OLE> # Ordered List Ends
+
+-BN> # Expands into Box Note
+#-BNB> # Also expands into Box Note, for consistency's sake.
+-BNA> # Expands into Box Note Author
+-BNE> # Ends multi-line Box Notes. 
+# -BNA> Also ends multi-line box notes, but not all box notes have an author. Hence -BNE>
+
+#Table syntax inspired from Wikimedia's Wiki-pipe syntax.
+# http://meta.wikimedia.org/wiki/Help:Table#Pipe_syntax_tutorial
+{| [optional class elements]# Start Table
+|+ Table_Title # Caption 
+! # Plain Header
+!style=value! header # Styled Header
+|- # Row divider
+| # Plain Cell entry
+|style=value| entry # Styled Cell
+|} # End Table
+
+
+Example:
+
+-H>Header
+-Q>Quote
+-QA>Quote Author
+A straight line with no marker at the front is implicitly encased as pragraph.
+<Anything on a line enclosed in arrows is copied directly into the output in the instance of one-off formatting>
